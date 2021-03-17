@@ -219,4 +219,4 @@ At this point in time create new issue with **Type: Question** label related to 
 [issues-shield]: https://img.shields.io/github/issues/SandNoodle/GothicNPCTools.svg?style=for-the-badge
 [issues-url]: https://github.com/SandNoodle/GothicNPCTools/issues
 [license-shield]: https://img.shields.io/github/license/SandNoodle/GothicNPCTools.svg?style=for-the-badge
-[license-url]: https://github.com/SandNoodle/GothicNPCTools/blob/master/LICENSE.txt
+[license-url]: https://github.com/SandNoodle/GothicNPCTools/blob/master/LICENSE.md
