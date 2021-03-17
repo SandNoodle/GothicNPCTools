@@ -1,0 +1,332 @@
+/* Final Frontier */
+/* Logo Font */
+@font-face {
+  font-family: 'Final Frontier';  
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/FinalFrontier.ttf');
+}
+
+/* Oxygen */
+@font-face {
+  font-family: 'Oxygen';  
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oxygen-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Oxygen Light';  
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Oxygen-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Oxygen Bold';  
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/Oxygen-Bold.ttf');
+}
+
+/* Roboto */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+
+.root {
+  -fx-background-color: -base00;
+  -fx-font-size: 12px;
+  -fx-font-family: "Roboto", "Oxygen", System;
+}
+
+  /* For some reason Fonts are not passed from .root */
+.label {
+  -fx-font-family: "Roboto", "Oxygen", System;
+  -fx-text-fill: -base08;
+}
+
+.tooltip {
+  -fx-font-family: "Roboto", "Oxygen", System;
+  -fx-background-color: -base04;
+  -fx-text-fill: -base12;
+}
+
+/* Tool Bar */
+.tool-bar {
+  -fx-background-color: -base02;
+  -fx-background-insets: 0px;
+}
+
+/* Button */
+.button {
+  -fx-background-color: -base02;
+  -fx-text-fill: -base10;
+  -fx-background-insets: 0px;
+  -fx-background-radius: 4px;
+  -fx-padding: 4px 8px 4px 8px;
+  -fx-min-width: 32px;
+  -fx-min-height: 24px;
+}
+
+.button:hover {
+  -fx-background-color: -color05;
+  -fx-text-fill: -base00;
+}
+
+.button SVGPath {
+  -fx-fill: -base06;
+}
+
+.button:hover SVGPath {
+  -fx-fill: -base00;
+}
+
+/* Text Field */
+.text-field {
+  -fx-background-color: -base01;
+  -fx-border-color: -base01;
+
+  -fx-text-inner-color: -base12;
+  -fx-prompt-text-fill: -base04;
+
+  -fx-background-radius: 4px;
+  -fx-border-radius: 4px;
+}
+
+.text-field:hover, 
+.text-field:focused,
+.text-field:showing {
+  -fx-background-color: -base02;
+  -fx-prompt-text-fill: -color04;
+}
+
+/* Checkbox */
+.check-box .box {
+  -fx-body-color: -base02;
+  -fx-outer-border: -base02;
+  -fx-inner-border: -base02;
+  -fx-background-insets: 0px;
+  -fx-padding: 0.2em;
+
+  -fx-background-radius: 20%;
+  -fx-border-radius: 20%;
+}
+
+.check-box:hover .box {
+  -fx-body-color: -base04;
+}
+
+.check-box:selected .box {
+  -fx-body-color: -color02;
+}
+
+.check-box .mark {
+  -fx-shape: "M1.0,1.0";
+  -fx-background-insets: 0;
+  -fx-padding: 0.5em 0.5em;
+  -fx-border-radius: 20%;
+  -fx-color: -base02;
+}
+
+.check-box .text {
+  -fx-fill: -base08;  
+}
+
+/* Menu */
+.menu-bar {
+  -fx-background-color: -base00;
+  -fx-background-insets: 0;
+}
+
+.menu-bar > .container > .menu-button {
+  -fx-background-color: -base00;
+}
+
+.menu-bar > .container > .menu-button > .label {
+  -fx-text-fill: -base08;
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -color04;
+}
+
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: -base00;
+}
+
+.menu-item {
+  -fx-background-color: -base00; 
+}
+
+.menu-item .label {
+  -fx-text-fill: -base10;
+}
+
+.menu-item:focused, .menu-item:hovered {
+  -fx-background-color: -color04; 
+}
+
+.menu-item:focused .label, .menu-item:hovered .label {
+  -fx-text-fill: -base00;
+}
+
+.context-menu {
+  -fx-background-color: -base00; 
+}
+
+
+/* Tabs */
+.tab-pane .tab {
+  -fx-background-color: -base03;
+  -fx-outer-border: -base03;
+  -fx-inner-border: -base03;
+  -fx-background-insets: 0;
+  -fx-border-insets: 0;
+  -fx-background-radius: 8px 8px 0px 0px;
+  -fx-border-radius: 8px 8px 0px 0px;
+  -fx-padding: 0px;
+}
+
+.tab-pane .tab:hover {
+  -fx-background-color: -base04;
+}
+
+.tab-pane .tab:showing,
+.tab-pane .tab:selected{
+  -fx-outer-border: -base00;
+  -fx-inner-border: -base00;
+  -fx-border-color: -base00;
+  -fx-background-color: -base00;
+}
+
+.tab-pane .tab:selected .focus-indicator {
+  -fx-border-insets: 0;
+  -fx-border-width: 0;
+}
+
+.tab-pane .tab:disabled {
+  -fx-background-color: -color00;
+  -fx-opacity: 1.0;
+}
+
+.tab-pane .tab:disabled .text {
+  -fx-fill: -base00;
+}
+
+.tab-pane .tab .text {
+  -fx-fill: -base12;
+}
+
+.tab-pane .tab-header-background {
+  -fx-background-color: -base01;
+}
+
+/* Choice Box */
+.choice-box {
+  -fx-background-color: -base01;
+  -fx-inner-border: -base01;
+
+  -fx-background-radius: 4px;
+}
+
+.choice-box:hover {
+  -fx-background-color: -base02;
+}
+
+.choice-box .open-button .arrow {
+  -fx-background-color: -base04;
+  -fx-background-insets: 0px;
+  -fx-scale-x: 1.5;
+  -fx-scale-y: 1.5;
+}
+
+.choice-box .label {
+  -fx-alignment: center;
+}
+
+/* Radio Button */
+.radio-button {
+  -fx-text-fill: -base08;
+}
+
+.radio-button .radio {
+  -fx-background-color: -base01;
+  -fx-background-insets: 0px;
+}
+
+.radio-button:selected .radio .dot {
+  -fx-background-color: -color02;
+  -fx-background-insets: 0px;
+  -fx-scale-x: 1.5;
+  -fx-scale-y: 1.5;
+}
+
+/* Separator */
+.separator .line {
+  -fx-border-color: -base01;
+  -fx-border-insets: 0px;
+  -fx-border-width: 2px;
+}
+
+/* List View */
+.list-view {
+  -fx-background-color: -base01;
+  -fx-background-radius: 4px;
+}
+
+/* User Specified */
+#mainLabel {
+  -fx-background-color: -base02;
+  -fx-text-fill: -color05;
+  -fx-translate-x: 0;
+  -fx-translate-y: -14;
+  -fx-padding: 0 16 0 16;
+
+  -fx-background-radius: 8px;
+}
+
+#subLabel {
+  -fx-text-fill: -color01;
+}
+
+#warningLabel {
+  -fx-text-fill: -color00;
+}
+
+#largeLabel {
+  -fx-font-size: 24px;
+}
+
+#warningButton:hover {
+  -fx-text-fill: -base00;
+  -fx-background-color: -color00;
+}
+
+#headerBorder {
+  -fx-border-color: -base03;
+  -fx-border-width: 2px;
+
+  -fx-border-radius: 2.5%;
+}

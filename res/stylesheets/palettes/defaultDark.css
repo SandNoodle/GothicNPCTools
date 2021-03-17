@@ -1,0 +1,42 @@
+/* 
+    Name: Default Dark
+    Author: Krzysztof Grabski
+*/
+
+* {
+    -base00: #212121;
+    -base01: #303030;
+    -base02: #3F3F3F;
+    -base03: #4E4E4E;
+    -base04: #5D5D5D;
+    -base05: #6C6C6C;
+    -base06: #7B7B7B;
+    -base07: #8A8A8A;
+    -base08: #999999;
+    -base09: #A8A8A8;
+    -base10: #B7B7B7;
+    -base11: #C6C6C6;
+    -base12: #D5D5D5;
+    -base13: #E4E4E4;
+    -base14: #F3F3F3;
+    -base15: #FFFFFF;
+
+    -color00: #F36C6C;
+    -color01: #F3A86C;
+    -color02: #F3D56C;
+    -color03: #E4F36C;
+    -color04: #7BF3A8;
+    -color05: #A8F36C;
+    -color06: #99F3FF;
+    -color07: #99B7F3;
+    -color08: #C699F3;
+    -color09: #F399D5;
+
+    -special00: #FFFFFF;
+    -special01: #FFFFFF;
+    -special02: #FFFFFF;
+    -special03: #FFFFFF;
+    -special04: #FFFFFF;
+    -special05: #FFFFFF;
+    -special06: #FFFFFF;
+}

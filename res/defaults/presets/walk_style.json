@@ -1,0 +1,25 @@
+{
+	"GOTHIC_ONE":
+	[
+		{ "Humans_Tired.mds":		"WLK_TIRED" },
+		{ "Humans_Militia.mds":		"WLK_GUARD" },
+		{ "Humans_Mage.mds":		"WLK_MAGE" },
+		{ "Humans_Arrogance.mds":	"WLK_ARROGANCE" },
+		{ "Humans_Relaxed.mds":		"WLK_RELAXED" },
+		{ "Humans_Babe.mds":		"WLK_BABE" },
+		{ "Humans_Drunken.mds":		"WLK_DRUNK" },
+		{ "Humans_Sprint.mds":		"WLK_SPRINT" },
+		{ "Humans_Flee.mds":		"WLK_FLEE" }
+	],
+	"GOTHIC_TWO":
+	[
+		{ "Humans_Tired.mds":		"WLK_TIRED" },
+		{ "Humans_Militia.mds":		"WLK_GUARD" },
+		{ "Humans_Mage.mds":		"WLK_MAGE" },
+		{ "Humans_Arrogance.mds":	"WLK_ARROGANCE" },
+		{ "Humans_Relaxed.mds":		"WLK_RELAXED" },
+		{ "Humans_Babe.mds":		"WLK_BABE" },
+		{ "Humans_Sprint.mds":		"WLK_SPRINT" },
+		{ "Humans_Flee.mds":		"WLK_FLEE" }
+	]
+}

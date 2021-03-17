@@ -1,0 +1,39 @@
+{
+	"GOTHIC_ONE":
+	[
+		{ "GIL_NONE":	"GLD_NONE" },
+		{ "GIL_EBR": 	"GLD_ARCHBARONS" },
+		{ "GIL_GRD":	"GLD_GUARD" },
+		{ "GIL_STT":	"GLD_SHADOW" },
+		{ "GIL_KDF":	"GLD_FIREMAGE" },
+		{ "GIL_VLK":	"GLD_MINER" },
+		{ "GIL_KDW":	"GLD_WATERMAGE" },
+		{ "GIL_SLD":	"GLD_MERCENARY" },
+		{ "GIL_ORG":	"GLD_ROGUE" },
+		{ "GIL_BAU":	"GLD_SCRAPER" },
+		{ "GIL_SFB":	"GLD_DIGGER" },
+		{ "GIL_GUR":	"GLD_GURU" },
+		{ "GIL_NOV":	"GLD_NOVICE" },
+		{ "GIL_TPL":	"GLD_TEMPLAR" },
+		{ "GIL_DMB":	"GLD_NECROMANCER" },
+		{ "GIL_BAB":	"GLD_BABE" }
+	],
+	"GOTHIC_TWO":
+	[
+		{ "GIL_NONE":	"GLD_NONE" },
+		{ "GIL_PAL":	"GLD_PALADIN" },
+		{ "GIL_MIL":	"GLD_GUARD" },
+		{ "GIL_VLK":	"GLD_CITIZEN" },
+		{ "GIL_KDF":	"GLD_FIREMAGE" },
+		{ "GIL_NOV":	"GLD_FIRENOVICE" },
+		{ "GIL_DJG":	"GLD_DRAGONHUNTER" },
+		{ "GIL_SLD":	"GLD_MERCENARY" },
+		{ "GIL_BAU":	"GLD_FARMER" },
+		{ "GIL_BDT":	"GLD_BANDIT" },
+		{ "GIL_STRF":	"GLD_PRISONER" },
+		{ "GIL_DMT":	"GLD_SEEKER" },
+		{ "GIL_OUT":	"GLD_OUTLANDER" },
+		{ "GIL_PIR":	"GLD_PIRATE" },
+		{ "GIL_KDW":	"GLD_WATERMAGE" }
+	]
+}

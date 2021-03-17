@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="npcTab" minWidth="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="npctools.ui.controllers.NpcTabController">
+   <children>
+      <HBox prefHeight="677.0" prefWidth="1071.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox id="headerBorder" alignment="CENTER">
+                           <children>
+                              <Label id="mainLabel" alignment="CENTER" contentDisplay="CENTER" text="%npc.mainInformatonLabel">
+                                 <VBox.margin>
+                                    <Insets bottom="-8.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" spacing="48.0">
+                                 <children>
+                                    <VBox spacing="4.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                             <children>
+                                                <TextField fx:id="npcID" alignment="CENTER" minWidth="150.0" prefWidth="150.0" promptText="%npc.idPrompt">
+                                                   <tooltip>
+                                                      <Tooltip text="%tlp.npcID" />
+                                                   </tooltip></TextField>
+                                                <Label text="%npc.id" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                             <children>
+                                                <TextField fx:id="npcName" alignment="CENTER" minWidth="150.0" prefWidth="150.0" promptText="%npc.namePrompt">
+                                                   <tooltip>
+                                                      <Tooltip text="%tlp.npcName" />
+                                                   </tooltip></TextField>
+                                                <Label text="%npc.name" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                             <children>
+                                                <TextField fx:id="npcLevel" alignment="CENTER" minWidth="150.0" prefWidth="150.0" promptText="%npc.levelPrompt">
+                                                   <tooltip>
+                                                      <Tooltip text="%tlp.npcLevel" />
+                                                   </tooltip></TextField>
+                                                <Label text="%npc.level" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox spacing="4.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                             <children>
+                                                <ChoiceBox fx:id="npcGuild" minWidth="150.0" prefWidth="150.0">
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <tooltip>
+                                                      <Tooltip text="%tlp.npcGuild" />
+                                                   </tooltip>
+                                                </ChoiceBox>
+                                                <Label text="%npc.guild" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="8.0">
+                                             <children>
+                                                <ChoiceBox fx:id="npcType" minWidth="150.0" prefWidth="150.0">
+                                                   <tooltip>
+                                                      <Tooltip text="%tlp.npcType" />
+                                                   </tooltip></ChoiceBox>
+                                                <Label text="%npc.type" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="39.0" spacing="8.0">
+                                             <children>
+                                                <ChoiceBox fx:id="npcVoice" minWidth="150.0" prefWidth="150.0">
+                                                   <tooltip>
+                                                      <Tooltip text="%tlp.npcVoice" />
+                                                   </tooltip></ChoiceBox>
+                                                <Label text="%npc.voice" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="8.0" right="8.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" spacing="8.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER">
+                                       <children>
+                                          <VBox alignment="CENTER" spacing="4.0">
+                                             <children>
+                                                <Label id="subLabel" text="%npc.flags" />
+                                                <HBox alignment="CENTER" spacing="8.0">
+                                                   <children>
+                                                      <CheckBox fx:id="npcFlagInvulnerable" alignment="TOP_LEFT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="%npc.invulnerable" />
+                                                      <CheckBox fx:id="npcFlagGhost" mnemonicParsing="false" text="%npc.ghost" />
+                                                      <CheckBox fx:id="npcFlagFriend" mnemonicParsing="false" text="%npc.friend" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="4.0" right="4.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <padding>
+                                          <Insets left="8.0" right="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0">
+                                       <children>
+                                          <VBox alignment="CENTER" spacing="4.0">
+                                             <children>
+                                                <Label id="subLabel" text="%npc.senses" />
+                                                <HBox alignment="CENTER" spacing="8.0">
+                                                   <children>
+                                                      <CheckBox fx:id="npcSenseSee" mnemonicParsing="false" selected="true" text="%npc.see" />
+                                                      <CheckBox fx:id="npcFlagHear" mnemonicParsing="false" selected="true" text="%npc.hear" />
+                                                      <CheckBox fx:id="npcFlagSmell" mnemonicParsing="false" selected="true" text="%npc.smell" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets left="4.0" right="4.0" />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="2.0" left="4.0" right="4.0" top="2.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets left="8.0" right="8.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="32.0" right="32.0" top="12.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="4.0" top="4.0" />
+                           </padding>
+                        </VBox>
+                        <VBox id="headerBorder" alignment="CENTER">
+                           <padding>
+                              <Insets bottom="4.0" top="4.0" />
+                           </padding>
+                           <children>
+                              <Label id="mainLabel" alignment="CENTER" text="%npc.characteristicsLabel">
+                                 <VBox.margin>
+                                    <Insets bottom="-12.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" spacing="32.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" spacing="4.0">
+                                       <children>
+                                          <Label id="subLabel" text="%npc.attributesLabel" />
+                                          <CheckBox fx:id="npcPerChapterAttributes" mnemonicParsing="false" text="%npc.perChapter">
+                                             <tooltip>
+                                                <Tooltip text="%tlp.atrPerChapter" />
+                                             </tooltip></CheckBox>
+                                          <VBox spacing="4.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="126.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcChapterAttributes" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="%npc.chapterPrompt" />
+                                                      <Label text="%npc.chapter" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcStrength" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.attributePrompt" />
+                                                      <Label text="%npc.strength" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcDexterity" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.attributePrompt" />
+                                                      <Label text="%npc.dexterity" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="39.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcMaxHealth" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.healthPrompt" />
+                                                      <Label text="%npc.maxHealth" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcMaxMana" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.manaPrompt" />
+                                                      <Label text="%npc.maxMana" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="97.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcCurrentHealth" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.healthPrompt" />
+                                                      <Label text="%npc.currentHealth" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcCurrentMana" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.manaPrompt" />
+                                                      <Label text="%npc.currentMana" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="4.0" left="8.0" right="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="207.0" layoutY="10.0" spacing="4.0">
+                                       <children>
+                                          <Label id="subLabel" text="%npc.protectionLabel" />
+                                          <CheckBox fx:id="npcEnableProtection" mnemonicParsing="false" text="%npc.enableProtection">
+                                             <tooltip>
+                                                <Tooltip text="%tlp.enableProtection" />
+                                             </tooltip></CheckBox>
+                                          <VBox spacing="4.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcBluntProtection" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="10" />
+                                                      <Label text="%npc.bluntProt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcEdgeProtection" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="10" />
+                                                      <Label text="%npc.edgeProt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="39.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcFireProtection" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="10" />
+                                                      <Label text="%npc.fireProt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcPointProtection" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="10" />
+                                                      <Label text="%npc.pointProt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="97.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcMagicProtection" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="10" />
+                                                      <Label text="%npc.magicProt" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="126.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcFlyProtection" alignment="CENTER" disable="true" minWidth="48.0" prefWidth="48.0" promptText="10" />
+                                                      <Label text="%npc.flyProt" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="4.0" left="8.0" right="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="232.0" layoutY="10.0" spacing="4.0">
+                                       <children>
+                                          <Label id="subLabel" text="%npc.fightAbilitiesLabel" />
+                                          <VBox alignment="CENTER" spacing="4.0">
+                                             <children>
+                                                <VBox alignment="CENTER" spacing="4.0">
+                                                   <children>
+                                                      <Label text="%npc.fightTactic" />
+                                                      <ChoiceBox fx:id="npcFightTactic" prefWidth="128.0">
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcFightTactic" />
+                                                         </tooltip></ChoiceBox>
+                                                   </children>
+                                                </VBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcOneHanded" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.fightSkillPrompt">
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcFightSkill" />
+                                                         </tooltip></TextField>
+                                                      <Label text="%npc.oneHanded" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="39.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcTwoHanded" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.fightSkillPrompt">
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcFightSkill" />
+                                                         </tooltip></TextField>
+                                                      <Label text="%npc.twoHanded" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcBow" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.fightSkillPrompt">
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcFightSkill" />
+                                                         </tooltip></TextField>
+                                                      <Label text="%npc.bow" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="97.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcCrossbow" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.fightSkillPrompt">
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcFightSkill" />
+                                                         </tooltip></TextField>
+                                                      <Label text="%npc.crossbow" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="153.0" spacing="8.0">
+                                                   <children>
+                                                      <TextField fx:id="npcMagicCircle" alignment="CENTER" minWidth="48.0" prefWidth="48.0" promptText="%npc.magicCirclePrompt">
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcMagicSkill" />
+                                                         </tooltip></TextField>
+                                                      <Label text="%npc.magicCircle" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="4.0" left="8.0" right="8.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="32.0" right="32.0" top="6.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox id="headerBorder" alignment="CENTER">
+                           <children>
+                              <Label id="mainLabel" alignment="CENTER" text="%npc.visualsLabel">
+                                 <VBox.margin>
+                                    <Insets bottom="-12.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <HBox alignment="CENTER" spacing="32.0">
+                                       <children>
+                                          <Label id="subLabel" text="%npc.gender" />
+                                          <HBox spacing="16.0">
+                                             <children>
+                                                <RadioButton fx:id="npcMale" mnemonicParsing="false" selected="true" text="%npc.male">
+                                                   <toggleGroup>
+                                                      <ToggleGroup fx:id="genderGroup" />
+                                                   </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton fx:id="npcFemale" mnemonicParsing="false" text="%npc.female" toggleGroup="$genderGroup" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" spacing="4.0">
+                                       <children>
+                                          <VBox spacing="4.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" minWidth="200.0" prefWidth="230.0" spacing="8.0">
+                                                   <children>
+                                                      <ChoiceBox fx:id="npcWalkStyle" minWidth="100.0" prefWidth="150.0">
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcWalkStyle" />
+                                                         </tooltip>
+                                                      </ChoiceBox>
+                                                      <Label minWidth="45.0" prefWidth="90.0" text="%npc.walkStyle" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                   <children>
+                                                      <ChoiceBox fx:id="npcHeadMesh" minWidth="100.0" prefWidth="150.0">
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcHeadMesh" />
+                                                         </tooltip>
+                                                      </ChoiceBox>
+                                                      <Label minWidth="45.0" prefWidth="90.0" text="%npc.headMesh" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                   <children>
+                                                      <ChoiceBox fx:id="npcFaceTexture" minWidth="100.0" prefWidth="150.0">
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcFaceTexture" />
+                                                         </tooltip>
+                                                      </ChoiceBox>
+                                                      <Label minWidth="45.0" prefWidth="90.0" text="%npc.faceTexture" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                   <children>
+                                                      <ChoiceBox fx:id="npcBodyTexture" minWidth="100.0" prefWidth="150.0">
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <tooltip>
+                                                            <Tooltip text="%tlp.npcBodyTexture" />
+                                                         </tooltip>
+                                                      </ChoiceBox>
+                                                      <Label minWidth="45.0" prefWidth="90.0" text="%npc.bodyTexture" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="4.0" left="8.0" top="4.0" />
+                                             </padding>
+                                          </VBox>
+                                          <VBox alignment="CENTER" spacing="4.0">
+                                             <children>
+                                                <VBox spacing="4.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                         <children>
+                                                            <ChoiceBox fx:id="npcPrimaryWeapon" minWidth="100.0" prefWidth="150.0">
+                                                               <tooltip>
+                                                                  <Tooltip text="%tlp.npcPrimaryWeapon" />
+                                                               </tooltip></ChoiceBox>
+                                                            <Label minWidth="45.0" prefWidth="90.0" text="%npc.primaryWeapon" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                         <children>
+                                                            <ChoiceBox fx:id="npcSecondaryWeapon" minWidth="100.0" prefWidth="150.0">
+                                                               <tooltip>
+                                                                  <Tooltip text="%tlp.npcSecondaryWeapon" />
+                                                               </tooltip></ChoiceBox>
+                                                            <Label minWidth="45.0" prefWidth="90.0" text="%npc.secondaryWeapon" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" spacing="8.0">
+                                                         <children>
+                                                            <ChoiceBox fx:id="npcArmor" minWidth="100.0" prefWidth="150.0">
+                                                               <tooltip>
+                                                                  <Tooltip text="%tlp.npcArmorWorn" />
+                                                               </tooltip></ChoiceBox>
+                                                            <Label minWidth="45.0" prefWidth="90.0" text="%npc.armorWorn" />
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="68.0" spacing="8.0">
+                                                         <children>
+                                                            <TextField fx:id="npcWeight" alignment="CENTER" minWidth="100.0" prefWidth="150.0" promptText="%npc.weightPrompt">
+                                                               <tooltip>
+                                                                  <Tooltip text="%tlp.npcWeight" />
+                                                               </tooltip></TextField>
+                                                            <Label minWidth="45.0" prefWidth="90.0" text="%npc.weight" />
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="4.0" right="8.0" top="4.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <padding>
+                                    <Insets left="8.0" right="8.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" top="4.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="6.0" left="32.0" right="32.0" top="6.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Separator orientation="VERTICAL" />
+            <AnchorPane>
+               <children>
+                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label id="largeLabel" alignment="CENTER" contentDisplay="CENTER" text="%npc.visualPreview">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <VBox id="headerBorder" alignment="TOP_CENTER">
+                           <padding>
+                              <Insets bottom="8.0" top="8.0" />
+                           </padding>
+                           <children>
+                              <Canvas fx:id="npcPreview" height="550.0" width="610.0">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Canvas>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="12.0" left="32.0" right="32.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
